@@ -11,7 +11,7 @@ def create_project_hash
   
   kickstarter.css("li.project.grid_4").each do |project|
     title = project.css("h2.bbcard_name strong a").text
-    projects[title.to_sym] = {        
+    projects[title.to_sym] = {                    #forgot what this means projects[title] include?
       
       #each project title is a key, and the value is another hash with each of our other data points as keys.
       
